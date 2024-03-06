@@ -1,6 +1,6 @@
 package ANIMALES;
 
-public class acuaticos extends animal
+public class acuaticos extends animals{
     boolean aletas;
     boolean branquias;
     boolean escamas;
@@ -9,8 +9,8 @@ public class acuaticos extends animal
                      String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
                      String cuidados, String enfermedades, String vacunas, int id,boolean salud, boolean comportamiento, boolean aletas, boolean branquias,
                      boolean escamas, String tipo_agua) {
-           super(
-           );
+           super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
+                   enfermedades, vacunas, id, salud, comportamiento);
         this.aletas = aletas;
         this.branquias = branquias;
         this.escamas = escamas;

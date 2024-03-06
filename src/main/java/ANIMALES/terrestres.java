@@ -1,6 +1,6 @@
 package ANIMALES;
 
-public class terrestres extends animal{
+public class terrestres extends animals{
     boolean patas;
     boolean cola;
     boolean pelaje;
@@ -9,6 +9,8 @@ public class terrestres extends animal{
                         String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
                         String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, boolean patas, boolean cola,
                         boolean pelaje, String tipo_terrestre) {
+           super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
+                   enfermedades, vacunas, id, salud, comportamiento);
 
         this.patas = patas;
 this.cola = cola;

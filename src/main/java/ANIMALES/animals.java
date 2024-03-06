@@ -20,7 +20,7 @@ public class animals {
     boolean comportamiento;
     int id;
 
-    public animal(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento) {
+    public animals ( String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento) {
         this.nombre = nombre;
         this.especie = especie;
         this.raza = raza;
@@ -57,6 +57,7 @@ public class animals {
         return super.equals(obj);
     }
 
+    @SuppressWarnings("removal")
     @Override
     protected void finalize() throws Throwable {
         // TODO Auto-generated method stub
@@ -245,18 +246,20 @@ public class animals {
         this.comportamiento = comportamiento;
     }
 
-    public void buenasalud(boolean salud) {
+    public boolean buenasalud( boolean salud) {
         if (salud == true)
             System.out.println("El animal " + nombre + " se encuentra en buen estado de salud");
         else
             System.out.println("El animal " + nombre + " se encuentra en mal estado de salud");
+        return salud;
     }
 
-    public void buencomportamiento(boolean comportamiento) {
+    public boolean buencomportamiento( boolean comportamiento) {
         if (comportamiento == true)
             System.out.println("El animal " + nombre + " se encuentra en buen estado de comportamiento");
         else
             System.out.println("El animal " + nombre + " se encuentra en mal estado de comportamiento");
+        return comportamiento;
     }
 
     //metodo para registrar la alimentación
