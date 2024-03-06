@@ -1,7 +1,6 @@
 package HABITATS;
 
-public class aviario extends habitats{
-
+public class valoadores {
     boolean puede_volar;
 
     public aviario(float temperatura,float humedad,boolean limpieza, boolean puede_volar) {
@@ -31,7 +30,7 @@ public class aviario extends habitats{
     public void setPuede_volar(boolean puede_volar) {
         this.puede_volar = puede_volar;
     }
-    }
 
 
+}
 
