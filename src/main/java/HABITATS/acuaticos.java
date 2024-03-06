@@ -1,6 +1,6 @@
 package HABITATS;
 
-public class acuaticos {
+public class acuaticos extends habitats{
 
     boolean puede_nadar;
 
@@ -50,4 +50,3 @@ public class acuaticos {
     }
 
 }
-
