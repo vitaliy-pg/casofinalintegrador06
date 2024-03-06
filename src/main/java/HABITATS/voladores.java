@@ -4,10 +4,15 @@ public class voladores extends  habitats{
 
     boolean puede_volar;
 
-    public aviario(float temperatura,float humedad,boolean limpieza, boolean puede_volar) {
+    public voladores ( float temperatura, float humedad, boolean limpieza, boolean puede_volar) {
         super(temperatura, humedad, limpieza);
         this.puede_volar = puede_volar;
     }
+
+    public voladores ( float temperatura, float humedad, boolean limpieza ) {
+        super ( temperatura, humedad, limpieza );
+    }
+
     public String toString() {
         return "aviario []";
     }

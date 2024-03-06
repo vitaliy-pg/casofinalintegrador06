@@ -29,6 +29,7 @@
             return super.equals(obj);
         }
 
+        @SuppressWarnings("removal")
         @Override
         protected void finalize() throws Throwable {
             // TODO Auto-generated method stub
@@ -67,4 +68,4 @@
 
     }
 
-}
+
