@@ -1,6 +1,6 @@
 package HABITATS;
 
-public class valoadores {
+public class valoadores extends habitats {
     boolean puede_volar;
 
     public aviario(float temperatura,float humedad,boolean limpieza, boolean puede_volar) {
