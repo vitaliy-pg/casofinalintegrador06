@@ -1,6 +1,6 @@
 package ANIMALES;
 
-public class terrestres {
+public class terrestres extends animal{
     boolean patas;
     boolean cola;
     boolean pelaje;

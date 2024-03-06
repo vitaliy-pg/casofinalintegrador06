@@ -1,21 +1,21 @@
 package ANIMALES;
 
-public class acuaticos {
+public class acuaticos extends animal
     boolean aletas;
     boolean branquias;
     boolean escamas;
     String tipo_agua;
-    public acuaticos ( String nombre, String especie, String raza, String color, String sexo, String edad,
-                       String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
-                       String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, boolean aletas, boolean branquias,
-                       boolean escamas, String tipo_agua){
-         super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
-    enfermedades, vacunas, id, salud, comportamiento);
+    public acuaticos(String nombre, String especie, String raza, String color, String sexo, String edad,
+                     String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
+                     String cuidados, String enfermedades, String vacunas, int id,boolean salud, boolean comportamiento, boolean aletas, boolean branquias,
+                     boolean escamas, String tipo_agua) {
+           super(
+           );
         this.aletas = aletas;
         this.branquias = branquias;
         this.escamas = escamas;
         this.tipo_agua = tipo_agua;
-}
+    }
     public boolean isAletas() {
         return aletas;
     }
@@ -46,4 +46,5 @@ public class acuaticos {
 
     public void setTipo_agua(String tipo_agua) {
         this.tipo_agua = tipo_agua;
+}
 }
