@@ -4,16 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4596e9d7-e70b-4ace-bfeb-eff24a2d0b3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="4596e9d7-e70b-4ace-bfeb-eff24a2d0b3f" name="Changes" comment="siuuuuuuuu">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zoologico/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ANIMALES/acuaticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/ANIMALES/acuaticos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ANIMALES/animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/ANIMALES/animals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ANIMALES/terrestres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/ANIMALES/terrestres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ANIMALES/voladores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/ANIMALES/voladores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HABITATS/acuaticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/HABITATS/acuaticos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HABITATS/habitats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/HABITATS/habitats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HABITATS/terrestres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/HABITATS/terrestres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HABITATS/voladores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/HABITATS/voladores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/administrador/administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/administrador/administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mantenimiento/mantenimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/mantenimiento/mantenimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visitantes/visitantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zoologico/visitantes/visitantes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
@@ -26,14 +54,55 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ZooManagementSystem.executor": "Run",
+    "Application.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="HABITATS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vital\IdeaProjects\casofinalintegrador06\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zoologico.main" />
+      <module name="casofinalintegrador06" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zoologico.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,11 +111,215 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717156044</updated>
-      <workItem from="1709717157208" duration="7000" />
+      <workItem from="1709717157208" duration="7230000" />
     </task>
+    <task id="LOCAL-00001" summary="creo el directorio de animales y los tipos de animales">
+      <option name="closed" value="true" />
+      <created>1709717847290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709717847290</updated>
+    </task>
+    <task id="LOCAL-00002" summary="designo el nombre, especie y otras caracteristicas de los animales acuaticos ademas de las posibles enfermadades">
+      <option name="closed" value="true" />
+      <created>1709718069723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718069723</updated>
+    </task>
+    <task id="LOCAL-00003" summary="decalaro las clases publicas de cada cosa">
+      <option name="closed" value="true" />
+      <created>1709718316336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718316336</updated>
+    </task>
+    <task id="LOCAL-00004" summary="designo lo mismo que antes la calse publica">
+      <option name="closed" value="true" />
+      <created>1709718564444</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718564444</updated>
+    </task>
+    <task id="LOCAL-00005" summary="decalro las caracteristicas">
+      <option name="closed" value="true" />
+      <created>1709718692313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718692313</updated>
+    </task>
+    <task id="LOCAL-00006" summary="vuelvo a hacer lo antes para declarar las clases publicas de cada carateristica">
+      <option name="closed" value="true" />
+      <created>1709718788793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718788793</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hago el mismo proceso de antes">
+      <option name="closed" value="true" />
+      <created>1709718907351</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718907351</updated>
+    </task>
+    <task id="LOCAL-00008" summary="hago el mismo proceso de antes">
+      <option name="closed" value="true" />
+      <created>1709718980995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718980995</updated>
+    </task>
+    <task id="LOCAL-00009" summary="hago el mismo proceso de antes por 500 vez">
+      <option name="closed" value="true" />
+      <created>1709719193257</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719193257</updated>
+    </task>
+    <task id="LOCAL-00010" summary="declaro los string de todas las cosas comunes que tienen los animales">
+      <option name="closed" value="true" />
+      <created>1709719260939</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719260939</updated>
+    </task>
+    <task id="LOCAL-00011" summary="obvaimente ns que coño es esto pero chat gpt dice que si">
+      <option name="closed" value="true" />
+      <created>1709719348280</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719348280</updated>
+    </task>
+    <task id="LOCAL-00012" summary="xd tu repositorio esta guapo">
+      <option name="closed" value="true" />
+      <created>1709719656632</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719656632</updated>
+    </task>
+    <task id="LOCAL-00013" summary="parte de animales acuaticos">
+      <option name="closed" value="true" />
+      <created>1709719957814</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719957814</updated>
+    </task>
+    <task id="LOCAL-00014" summary="putlizo tu direcctorio">
+      <option name="closed" value="true" />
+      <created>1709720179936</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720179936</updated>
+    </task>
+    <task id="LOCAL-00015" summary="puesto es muy largo">
+      <option name="closed" value="true" />
+      <created>1709720481286</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720481286</updated>
+    </task>
+    <task id="LOCAL-00016" summary="xs">
+      <option name="closed" value="true" />
+      <created>1709720521460</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720521460</updated>
+    </task>
+    <task id="LOCAL-00017" summary="2">
+      <option name="closed" value="true" />
+      <created>1709720746563</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720746563</updated>
+    </task>
+    <task id="LOCAL-00018" summary="no me sale">
+      <option name="closed" value="true" />
+      <created>1709720888892</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720888892</updated>
+    </task>
+    <task id="LOCAL-00019" summary="me estoy desesperando">
+      <option name="closed" value="true" />
+      <created>1709721104907</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721104907</updated>
+    </task>
+    <task id="LOCAL-00020" summary="pero pero pero">
+      <option name="closed" value="true" />
+      <created>1709721565640</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721565640</updated>
+    </task>
+    <task id="LOCAL-00021" summary="llalalal">
+      <option name="closed" value="true" />
+      <created>1709721940444</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721940444</updated>
+    </task>
+    <task id="LOCAL-00022" summary="siuuuuuuuu">
+      <option name="closed" value="true" />
+      <created>1709722168906</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722168906</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creo el directorio de animales y los tipos de animales" />
+    <MESSAGE value="caulidades de los animales acuaticos" />
+    <MESSAGE value="designo el nombre, especie y otras caracteristicas de los animales acuaticos ademas de las posibles enfermadades" />
+    <MESSAGE value="para que se pueda imprimir cada cualidad" />
+    <MESSAGE value="decalaro las clases publicas de cada cosa" />
+    <MESSAGE value="designo lo mismo que antes la calse publica" />
+    <MESSAGE value="decalro las caracteristicas" />
+    <MESSAGE value="copilot hace magia" />
+    <MESSAGE value="vuelvo a hacer lo antes para declarar las clases publicas de cada carateristica" />
+    <MESSAGE value="hago el mismo proceso de antes" />
+    <MESSAGE value="hago el mismo proceso de antes por 500 vez" />
+    <MESSAGE value="declaro los string de todas las cosas comunes que tienen los animales" />
+    <MESSAGE value="obvaimente ns que coño es esto pero chat gpt dice que si" />
+    <MESSAGE value="xd tu repositorio esta guapo" />
+    <MESSAGE value="parte de animales acuaticos" />
+    <MESSAGE value="putlizo tu direcctorio" />
+    <MESSAGE value="puesto es muy largo" />
+    <MESSAGE value="xs" />
+    <MESSAGE value="2" />
+    <MESSAGE value="no me sale" />
+    <MESSAGE value="me estoy desesperando" />
+    <MESSAGE value="pero pero pero" />
+    <MESSAGE value="llalalal" />
+    <MESSAGE value="siuuuuuuuu" />
+    <option name="LAST_COMMIT_MESSAGE" value="siuuuuuuuu" />
   </component>
 </project>

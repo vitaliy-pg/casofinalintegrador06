@@ -1,4 +1,4 @@
-package ANIMALES;
+package zoologico.ANIMALES;
 
 public class terrestres extends animals{
     boolean patas;

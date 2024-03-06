@@ -1,4 +1,4 @@
-package ANIMALES;
+package zoologico.ANIMALES;
 
 public class animals {
     String nombre;

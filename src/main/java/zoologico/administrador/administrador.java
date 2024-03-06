@@ -1,4 +1,4 @@
-package administrador;
+package zoologico.administrador;
 
 import java.util.HashMap;
 import java.util.Map;

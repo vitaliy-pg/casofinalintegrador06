@@ -1,4 +1,4 @@
-package HABITATS;
+package zoologico.HABITATS;
 
 public class voladores extends  habitats{
 

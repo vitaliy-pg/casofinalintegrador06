@@ -1,17 +1,18 @@
-package HABITATS;
+package zoologico.HABITATS;
 
-public class terrestres extends habitats    {
+public class acuaticos extends habitats{
 
-    boolean puede_caminar;
+    boolean puede_nadar;
 
-    public terrestres(float temperatura,float humedad,boolean limpieza, boolean puede_caminar) {
+    public acuaticos(float temperatura,float humedad,boolean limpieza,boolean puede_nadar) {
         super(temperatura, humedad, limpieza);
-        this.puede_caminar = puede_caminar;
+        this.puede_nadar = puede_nadar;
     }
+
 
     @Override
     public String toString() {
-        return "terrestres []";
+        return "acuaticos []";
     }
 
     @Override
@@ -38,13 +39,14 @@ public class terrestres extends habitats    {
         return super.hashCode();
     }
 
-    public boolean isPuede_caminar() {
-        return puede_caminar;
+
+    public boolean isPuede_nadar() {
+        return puede_nadar;
     }
 
-    public void setPuede_caminar(boolean puede_caminar) {
-        this.puede_caminar = puede_caminar;
+
+    public void setPuede_nadar(boolean puede_nadar) {
+        this.puede_nadar = puede_nadar;
     }
 
 }
-

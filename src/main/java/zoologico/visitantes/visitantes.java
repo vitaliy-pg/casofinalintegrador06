@@ -1,4 +1,4 @@
-package visitantes;
+package zoologico.visitantes;
 
 class Visitor {
     String name;

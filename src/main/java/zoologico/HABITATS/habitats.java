@@ -1,5 +1,5 @@
 
-    package HABITATS;
+    package zoologico.HABITATS;
 
     public class habitats {
         float temperatura;
