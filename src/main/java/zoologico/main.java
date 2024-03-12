@@ -1,70 +1,60 @@
 package zoologico;
 
-import zoologico.HABITATS.acuaticos;
-import zoologico.HABITATS.terrestres;
-import zoologico.HABITATS.voladores;
-
-import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
 
-public class main {
+1public class main {
 
     public static void main(String[] args) {
-        // Crear instancias de los diferentes tipos de hábitats
-        acuaticos acuatico = new acuaticos(26, 70, true, true);
-        terrestres terrestre = new terrestres(26, 70, true, true);
-        voladores volador = new voladores(26, 70, true, true);
+        Scanner scanner = new Scanner(System.in);
+        ResourceManager resourceManager = new ResourceManager();
+        MaintenanceAndSecuritySystem maintenanceAndSecuritySystem = new MaintenanceAndSecuritySystem();
 
-        // Crear una lista de hábitats
-        List<Object> listaHabitats = new ArrayList<>().reversed ();
-        listaHabitats.add(acuatico);
-        listaHabitats.add(terrestre);
-        listaHabitats.add(volador);
+        boolean exit = false;
+        while (!exit) {
+            System.out.println("=== Menú de Opciones ===");
+            System.out.println("1. Agregar recursos");
+            System.out.println("2. Monitorear condiciones del hábitat");
+            System.out.println("3. Realizar tareas de mantenimiento y seguridad");
+            System.out.println("4. Salir");
+            System.out.print("Seleccione una opción: ");
 
-        // Iterar sobre la lista de hábitats
-        for (Object habitat : listaHabitats) {
-            System.out.println();
+            int option = scanner.nextInt();
+            scanner.nextLine(); // Consumir la nueva línea después de nextInt()
+
+            switch (option) {
+                case 1:
+                    System.out.print("Ingrese el nombre del recurso: ");
+                    String resourceName = scanner.nextLine();
+                    System.out.print("Ingrese la cantidad de " + resourceName + ": ");
+                    int quantity = scanner.nextInt();
+                    resourceManager.addResource(resourceName, quantity);
+                    break;
+                case 2:
+                    System.out.println("Monitoreo de condiciones del hábitat...");
+                    // Aquí podrías implementar la lógica para monitorear condiciones del hábitat
+                    break;
+                case 3:
+                    System.out.println("Realización de tareas de mantenimiento y seguridad...");
+                    // Aquí podrías implementar la lógica para realizar tareas de mantenimiento y seguridad
+                    break;
+                case 4:
+                    exit = true;
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Por favor, seleccione una opción válida.");
+                    break;
+            }
         }
 
-        // Gestión de Hábitats
-        AquaticHabitat aquaticHabitat = new AquaticHabitat();
-        TerrestrialHabitat terrestrialHabitat = new TerrestrialHabitat();
-        AviaryHabitat aviaryHabitat = new AviaryHabitat();
-
-        aquaticHabitat.monitorConditions("Temperatura", 26);
-        terrestrialHabitat.monitorConditions("Humedad", 70);
-        aviaryHabitat.monitorConditions("Limpieza", 90);
-
-        // Cuidado de Animales
-        Lion lion = new Lion("Savannah");
-        Penguin penguin = new Penguin("Antarctica");
-
-        lion.feed();
-        penguin.feed();
-
-        lion.updateHealth("Enfermo");
-        penguin.updateBehavior("Agresivo");
-
-        // Interacción con Visitantes
-        VirtualGuide virtualGuide = new VirtualGuide();
-        virtualGuide.provideTour("Niños");
-
-        InteractiveKiosk interactiveKiosk = new InteractiveKiosk();
-        interactiveKiosk.provideInformation("Información sobre leones");
-
-        // Administración de Recursos
-        ResourceManager resourceManager = new ResourceManager();
-        resourceManager.addResource("Alimentos", 100);
-        resourceManager.addResource("Medicinas", 50);
-        resourceManager.addResource("Equipamiento", 10);
-
-        // Mantenimiento y Seguridad
-        MaintenanceAndSecuritySystem maintenanceAndSecuritySystem = new MaintenanceAndSecuritySystem();
+        scanner.close();
     }
 
-    abstract static class Habitat {
+    static abstract class Habitat {
         String type;
         Map<String, Integer> conditions;
 
@@ -76,92 +66,6 @@ public class main {
         public void monitorConditions(String condition, int value) {
             conditions.put(condition, value);
             System.out.println("Monitoreando " + condition + " en el hábitat " + type + ": " + value);
-        }
-    }
-
-    static class AquaticHabitat extends Habitat {
-        public AquaticHabitat() {
-            super("Acuático");
-        }
-    }
-
-    static class TerrestrialHabitat extends Habitat {
-        public TerrestrialHabitat() {
-            super("Terrestre");
-        }
-    }
-
-    static class AviaryHabitat extends Habitat {
-        public AviaryHabitat() {
-            super("Aviario");
-        }
-    }
-
-    // Clases para el cuidado de animales
-    abstract static class Animal {
-        String species;
-        String habitat;
-        String health;
-        String behavior;
-
-        public Animal(String species, String habitat) {
-            this.species = species;
-            this.habitat = habitat;
-            this.health = "Saludable";
-            this.behavior = "Normal";
-        }
-
-        public void feed() {
-            System.out.println("Alimentando a " + species);
-        }
-
-        public void updateHealth(String healthStatus) {
-            this.health = healthStatus;
-        }
-
-        public void updateBehavior(String behaviorStatus) {
-            this.behavior = behaviorStatus;
-        }
-    }
-
-    static class Lion extends Animal {
-        public Lion(String habitat) {
-            super("León", habitat);
-        }
-    }
-
-    static class Penguin extends Animal {
-        public Penguin(String habitat) {
-            super("Pingüino", habitat);
-        }
-    }
-
-    // Clases para la interacción con visitantes
-    abstract static class VisitorInteraction {
-        abstract void provideTour(String visitorType);
-    }
-
-    static class VirtualGuide extends VisitorInteraction {
-        @Override
-        void provideTour(String visitorType) {
-            System.out.println("Bienvenido al tour virtual para " + visitorType);
-        }
-    }
-
-    static class InteractiveKiosk {
-        public void provideInformation(String information) {
-            System.out.println("Mostrando información en el kiosco interactivo: " + information);
-        }
-    }
-
-    // Clases para la administración de recursos
-    static class Resource {
-        String name;
-        int quantity;
-
-        public Resource(String name, int quantity) {
-            this.name = name;
-            this.quantity = quantity;
         }
     }
 
@@ -178,7 +82,6 @@ public class main {
         }
     }
 
-    // Clases para el mantenimiento y la seguridad
     static class MaintenanceAndSecuritySystem {
         List<String> maintenanceTasks;
         List<String> securityCameras;
@@ -188,6 +91,16 @@ public class main {
             maintenanceTasks = new ArrayList<>();
             securityCameras = new ArrayList<>();
             sensors = new ArrayList<>();
+        }
+    }
+
+    static class Resource {
+        String name;
+        int quantity;
+
+        public Resource(String name, int quantity) {
+            this.name = name;
+            this.quantity = quantity;
         }
     }
 }
